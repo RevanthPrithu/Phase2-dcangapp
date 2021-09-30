@@ -1,0 +1,16 @@
+<h2>List of Employees</h2>
+<button (click)='getEmployeesViaService()'>Get Employees</button> <hr/>
+<table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+        <th>ID</th> <th>EName</th> <th>Gender</th><th>Age</th>
+    </tr>
+</thead><tbody>
+    <tr *ngFor='let e of employees'> 
+        <td>{{e._id}}</td>
+        <td>{{e.ename}}</td>
+        <td>{{e.job}}</td>
+        <td>{{e.salary}}</td>
+    </tr>
+</tbody>
+</table>

@@ -1,0 +1,30 @@
+
+<h2>Index Component</h2>
+<ul class="nav nav-tabs">
+    <li><a href="#eb" data-toggle="tab">Event Binding</a></li>
+    <li><a href="#sd" data-toggle="tab">Structural Directives</a></li>
+    <li><a href="#pb" data-toggle="tab">Property Binding</a></li>
+    
+  </ul>
+  
+  <div class="tab-content">
+    <div id="eb" class="tab-pane fade">
+        <app-ebindex></app-ebindex>
+    </div>
+    <div id="sd" class="tab-pane fade">
+        <app-sdindex></app-sdindex>
+    </div>
+    <div id="pb" class="tab-pane fade">
+        <app-pbindex></app-pbindex>
+    </div>
+  </div>
+  <!-- <h2> Show all examples at single page</h2>
+Show:
+<input type="radio" [(ngModel)]='choice' value='eb'/> Event Binding
+<input type="radio" [(ngModel)]='choice' value='sd'/> Structural Binding
+<input type="radio" [(ngModel)]='choice' value='pb'/> Property Binding
+
+<hr/>
+<app-ebindex *ngIf='choice==="eb" '></app-ebindex>
+<app-sdindex *ngIf='choice==="sd" '></app-sdindex>
+<app-pbindex *ngIf='choice==="pb" '></app-pbindex> -->

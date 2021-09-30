@@ -1,0 +1,9 @@
+<p>sd-ex04 works!</p>
+Enter Choice:
+<input type="number" [(ngModel)]='choice'/><br/>
+<div [ngSwitch]='choice'>
+    <p *ngSwitchCase='1'>North</p>
+    <p *ngSwitchCase='2'>east</p>
+    <p *ngSwitchCase='3'>West</p>
+    <p *ngSwitchCase='4'>South</p>
+</div>

@@ -1,0 +1,10 @@
+<p>sd-ex03 works!</p>
+<button (click)='getitems("fruits")'>Show fruits</button>
+<button (click)='getitems("cakes")'>Show cakes</button><hr/>
+<h1>{{heading}}</h1>
+<ol>
+    <li *ngFor='let item of items'>
+        {{item}}
+
+    </li>
+</ol>{{msg}}

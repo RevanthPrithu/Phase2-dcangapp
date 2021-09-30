@@ -1,0 +1,52 @@
+<p>person-crud works!</p>
+<h2>List of People</h2>
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th> <th>Name</th>
+            <th>Gender</th> <th>Age</th>
+            <th>Operations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let item of people'>
+            <td>{{item.id}}</td> <td>{{item.pname}}</td>
+            <td>{{item.Gender}}</td> <td>{{item.age}}</td>
+            <td>
+                <a href="#" (click)='getPersonbyId(item.id)'>Select</a> | 
+                <a href="#" (click)='deletePersonbyId(item.id)'>Delete</a>
+            </td>
+        </tr>
+    </tbody>
+</table>{{msg}}<hr/>    
+ <tr>
+<td>ID</td>     : <td><input type='text' [(ngModel)]='x.id'/></td> 
+</tr>
+<tr>
+<td>Name</td>   : <td><input type='text' [(ngModel)]='x.pname'/></td> 
+</tr>
+<tr>
+<td>Gender</td> : <td><input type='text' [(ngModel)]='x.Gender'/></td> 
+</tr>
+<tr>
+<td>Age</td>    : <td><input type='text' [(ngModel)]='x.age'/></td> 
+</tr>
+<tr>
+    <td><button (click)='x={}'>Clear All</button></td>    
+</tr> 
+<!---Adding Record-->
+    <tr>
+    <td>ID</td>     : <td><input type='text' [(ngModel)]='temp.id'/></td> 
+    </tr>
+    <tr>
+    <td>Name</td>   : <td><input type='text' [(ngModel)]='temp.pname'/></td> 
+    </tr>
+    <tr>
+    <td>Gender</td> : <td><input type='text' [(ngModel)]='temp.Gender'/></td> 
+    </tr>
+    <tr>
+    <td>Age</td>    : <td><input type='text' [(ngModel)]='temp.age'/></td> 
+    </tr>
+    <tr>
+        <button (click)='addRecord(temp)'>Add</button>  |  <button (click)='temp={}'>Clear</button> 
+    </tr>

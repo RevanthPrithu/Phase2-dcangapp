@@ -1,0 +1,11 @@
+<p>sdindex works!</p>
+Show:
+<input type="radio" [(ngModel)]='sdchoice' value='ex1'/> ex-01
+<input type="radio" [(ngModel)]='sdchoice' value='ex2'/> ex-02
+<input type="radio" [(ngModel)]='sdchoice' value='ex3'/> ex-03
+<input type="radio" [(ngModel)]='sdchoice' value='ex4'/> ex-04
+<hr/>
+<app-sd-ex01 *ngIf='sdchoice==="ex1" '></app-sd-ex01>
+<app-sd-ex02 *ngIf='sdchoice==="ex2" '></app-sd-ex02>
+<app-sd-ex03 *ngIf='sdchoice==="ex3" '></app-sd-ex03>
+<app-sd-ex04 *ngIf='sdchoice==="ex4" '></app-sd-ex04>

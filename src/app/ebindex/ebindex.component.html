@@ -1,0 +1,17 @@
+<p>ebindex works!</p>
+<!--<app-eb-ex01></app-eb-ex01><hr/>
+<app-eb-ex02></app-eb-ex02><hr/>
+<app-eb-ex03></app-eb-ex03><hr/>
+<app-eb-ex04></app-eb-ex04><hr/>
+-->
+<h2>Show some examples only</h2>
+Show:
+<input type="radio" [(ngModel)]='ebchoice' value='ex1'/> ex-01
+<input type="radio" [(ngModel)]='ebchoice' value='ex2'/> ex-02
+<input type="radio" [(ngModel)]='ebchoice' value='ex3'/> ex-03
+<input type="radio" [(ngModel)]='ebchoice' value='ex4'/> ex-04
+<hr/>
+<app-eb-ex01 *ngIf='ebchoice==="ex1" '></app-eb-ex01>
+<app-eb-ex02 *ngIf='ebchoice==="ex2" '></app-eb-ex02>
+<app-eb-ex03 *ngIf='ebchoice==="ex3" '></app-eb-ex03>
+<app-eb-ex04 *ngIf='ebchoice==="ex4" '></app-eb-ex04>

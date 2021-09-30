@@ -1,0 +1,7 @@
+<p>pbindex works!</p>
+Show:
+<input type="radio" [(ngModel)]='pbchoice' value='ex1'/> ex-01
+<input type="radio" [(ngModel)]='pbchoice' value='ex2'/> ex-02
+<hr/>
+<app-pb-ex01 *ngIf='pbchoice==="ex1" '></app-pb-ex01>
+<app-pb-ex02 *ngIf='pbchoice==="ex2" '></app-pb-ex02>

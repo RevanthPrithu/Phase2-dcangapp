@@ -1,0 +1,25 @@
+<p>eb-ex04 works!</p>
+Select Choice:<br/>
+<input type="radio" value='choice1'
+    [(ngModel)]='choice' name='choice'
+    (change)='getchoice("choice1")'/>choice1
+<input type="radio" value='choice2'
+    [(ngModel)]='choice' name='choice'
+    (change)='getchoice("choice2")'/>choice2
+<input type="radio" value='choice3'
+    [(ngModel)]='choice' name='choice'
+    (change)='getchoice("choice3")'/>choice3
+    <br/>
+{{msg}}
+<hr/>
+Enter Name:
+<input type="text" [(ngModel)]='t1'/> <br/>
+Choose Gender: <br/>
+<input type="radio" name='gender'
+    (change)='setgender("m")' /> Male
+<input type="radio" name='gender'
+    (change)='setgender("f")' /> Female
+<br/>
+<button (click)='display()'>Say Hello</button><hr/>
+
+{{msg1}}

@@ -1,0 +1,33 @@
+<p>sd-ex01 works!</p>
+=====================================================================================
+<div>
+    <p>This division is visible by default</p>
+</div>
+<ng-template>
+    <p>This division is invisible by default</p>
+</ng-template>
+<hr/>
+=======================================================================================
+To Make it visible we use Angular property binding to angular tag such as ng-template:
+<div *ngIf='false'>
+    <p>This division is visible by default</p> 
+</div>
+<ng-template [ngIf]='true'>
+    <p>This division is invisible by default</p> 
+</ng-template>
+
+<hr/>
+======================================================================================
+To Make it visible we use Angular property binding to angular tag with some functionality:
+<input type="checkbox" [(ngModel)]='terms'/>
+Terms and Conditions <br/>
+{{terms}}
+<hr/>
+<div *ngIf='terms; else a'>
+    <p style=color:green>Thanks for accepting terms</p> 
+     
+</div>
+<ng-template #a >
+    <p style='color:red'>This template is invisible by default</p>
+    
+</ng-template>
